@@ -1,57 +1,57 @@
 # Дан список повторяющихся элементов. Вернуть список с дублирующимися элементами. 
 # В результирующем списке не должно быть дубликатов.
 
-# def find_duplicates(input_list):
-#     seen = set()
-#     duplicates = set()
+ def find_duplicates(input_list):
+    seen = set()
+    duplicates = set()
     
-#     for item in input_list:
-#         if item in seen:
-#             duplicates.add(item)
-#         else:
-#             seen.add(item)
+    for item in input_list:
+        if item in seen:
+            duplicates.add(item)
+        else:
+            seen.add(item)
     
-#     return list(duplicates)
-# input_list = [1, 2, 3, 2, 4, 5, 1, 6, 4]
-# result = find_duplicates(input_list)
-# print(result)
+    return list(duplicates)
+input_list = [1, 2, 3, 2, 4, 5, 1, 6, 4]
+result = find_duplicates(input_list)
+print(result)
 
 # В большой текстовой строке подсчитать количество встречаемых слов и вернуть 10 самых частых.
 # Не учитывать знаки препинания и регистр символов. За основу возьмите любую статью из википедии
 # или из документации к языку
 
-# import string
-# from collections import Counter
+import string
+from collections import Counter
 
-# def get_most_common_words(text, top_n=10):
-#     # Приводим текст к нижнему регистру
-#     text = text.lower()
+def get_most_common_words(text, top_n=10):
+    # Приводим текст к нижнему регистру
+    text = text.lower()
     
-#     # Убираем знаки препинания
-#     text = text.translate(str.maketrans("", "", string.punctuation))
+    # Убираем знаки препинания
+    text = text.translate(str.maketrans("", "", string.punctuation))
     
-#     # Разбиваем текст на слова
-#     words = text.split()
+    # Разбиваем текст на слова
+    words = text.split()
     
-#     # Подсчитываем частоту каждого слова
-#     word_counts = Counter(words)
+    # Подсчитываем частоту каждого слова
+    word_counts = Counter(words)
     
-#     # Возвращаем топ N самых частых слов
-#     return word_counts.most_common(top_n)
+    # Возвращаем топ N самых частых слов
+    return word_counts.most_common(top_n)
 
-# # Пример текста из статьи на Википедии о Python
-# text = """
-# Python — это высокоуровневый язык программирования общего назначения. 
-# Он был создан в конце 1980-х годов Гвидо ван Россумом и выпущен в 1991 году. 
-# Python имеет динамическую типизацию и автоматическое управление памятью. 
-# Его философия включает в себя такие принципы, как простота и читаемость кода.
-# """
+# Пример текста из статьи на Википедии о Python
+text = """
+Python — это высокоуровневый язык программирования общего назначения. 
+Он был создан в конце 1980-х годов Гвидо ван Россумом и выпущен в 1991 году. 
+Python имеет динамическую типизацию и автоматическое управление памятью. 
+Его философия включает в себя такие принципы, как простота и читаемость кода.
+"""
 
-# # Получаем 10 самых частых слов
-# top_words = get_most_common_words(text, top_n=10)
+# Получаем 10 самых частых слов
+top_words = get_most_common_words(text, top_n=10)
 
-# # Выводим результат
-# print(top_words)
+# Выводим результат
+print(top_words)
 
 # Создайте словарь со списком вещей для похода в качестве ключа и их массой в качестве значения.
 # Определите какие вещи влезут в рюкзак передав его максимальную грузоподъёмность.
