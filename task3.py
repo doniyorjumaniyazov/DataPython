@@ -1,9 +1,9 @@
 # Дан список повторяющихся элементов. Вернуть список с дублирующимися элементами. 
 # В результирующем списке не должно быть дубликатов.
 
-def find_duplicates(input_list):
-    seen = set()
-    duplicates = set()
+# def find_duplicates(input_list):
+#     seen = set()
+#     duplicates = set()
     
     for item in input_list:
         if item in seen:
