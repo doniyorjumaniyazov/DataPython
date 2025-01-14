@@ -5,16 +5,16 @@
 #     seen = set()
 #     duplicates = set()
     
-    for item in input_list:
-        if item in seen:
-            duplicates.add(item)
-        else:
-            seen.add(item)
+#     for item in input_list:
+#         if item in seen:
+#             duplicates.add(item)
+#         else:
+#             seen.add(item)
     
-    return list(duplicates)
-input_list = [1, 2, 3, 2, 4, 5, 1, 6, 4]
-result = find_duplicates(input_list)
-print(result)
+#     return list(duplicates)
+# input_list = [1, 2, 3, 2, 4, 5, 1, 6, 4]
+# result = find_duplicates(input_list)
+# print(result)
 # В большой текстовой строке подсчитать количество встречаемых слов и вернуть 10 самых частых.
 # Не учитывать знаки препинания и регистр символов. За основу возьмите любую статью из википедии
 # или из документации к языку
