@@ -1,0 +1,3 @@
+name,type,parent,size
+info1.txt,file,./new_test_folder,78
+info2.txt,file,./new_test_folder,25

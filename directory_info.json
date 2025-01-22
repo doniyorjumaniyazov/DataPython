@@ -1,0 +1,14 @@
+[
+    {
+        "name": "info1.txt",
+        "type": "file",
+        "parent": "./new_test_folder",
+        "size": 78
+    },
+    {
+        "name": "info2.txt",
+        "type": "file",
+        "parent": "./new_test_folder",
+        "size": 25
+    }
+]
